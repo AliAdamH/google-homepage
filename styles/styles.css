@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav {
     display: flex;
@@ -40,11 +41,11 @@ nav {
     background-color: #eff0f0;
 }
 
-li a {
+a {
     text-decoration: none;
     color: #000;
 }
-li a:hover{
+a:hover{
     text-decoration: underline;
 }
 #gmail-link {
@@ -63,4 +64,107 @@ li a:hover{
 #sign-btn:hover {
     box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
     text-decoration: none;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid sienna;
+}
+#search-form {
+    border: 1px solid magenta;
+    height: 30vh;
+    width: 600px;
+}
+#google-logo {
+    border: 1px solid purple;
+}
+#lang-options {
+    border: 1px solid chartreuse;
+}
+.form-style {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#search-input {
+    border: 1px solid lightgray;
+    border-radius: 24px;
+    height: 50px;
+    width: 600px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 5% 95%;
+    justify-items: start;
+}
+#search-input:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+#search-submit-btn {
+    border: 1px solid black;
+    height: 15vh;
+    width: 600px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+
+}
+[type="text"] {
+    height: 45px;
+    width: 550px;
+    border: none;
+    font-size: 16px;
+}
+[type="text"]:focus {
+    outline: none;
+}
+#search-icon {
+    width: 22px;
+    height: 22px;
+    justify-self: end;
+}
+
+.submit-btn {
+    background-color:#f8f9fa;
+    height: 40px;
+    border-style: none;
+    justify-self: end;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.lucky-btn {
+    justify-self: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+ 
+}
+.lucky-btn>button {
+    background-color: #f8f9fa;
+    height: 40px;
+    border-style: none;
+    font-size: 14px;
+    
+}
+.btn:hover{
+    border: 1px solid #dadce0;
+    box-shadow:  1px 1px rgba(0,0,0,.1);
+
+}
+#lang-options {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lang-options p a {
+    color: revert; /* Lets the text in the anchro remain blue */
 }
