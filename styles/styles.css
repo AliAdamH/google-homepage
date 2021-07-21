@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: flex-end;
+    border: 1px solid red;
+
+}
+
+.nav-list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    width: 400px;
+    right: 2em;
+    bottom: 10px;   
+    justify-items: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid green;
+    height: fit-content;
+}
+
+.apps-btn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+
+}
+.apps-btn:hover {
+    background-color: #eff0f0;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+}
+li a:hover{
+    text-decoration: underline;
+}
+#gmail-link {
+    justify-self: end;
+}
+#sign-btn {
+    padding-top: 9px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 9px;
+    background-color: rgb(26,115,232);
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+}
+#sign-btn:hover {
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+    text-decoration: none;
+}

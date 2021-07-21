@@ -4,23 +4,33 @@
         <meta charset="UTF-8">
         <title>Google</title>
         <link href="./styles/reset.css" rel="stylesheet">
+        <link href="./styles/styles.css" rel="stylesheet">
         <!-- Add CSS reset file and Custom CSS file-->
     </head>
     <body>
-        <nav>   <!-- Add the nav bar elements here -->
-            <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><button><img src="./images/outline_apps_black_24dp.png"></img></button></li> <!-- Add menu icon here-->
-                <li><a href="#"><button>Connexion</button></a></li>
+        <nav>   <!-- Add the nav bar elements here --> 
+            <ul class="nav-list">
+                <li  id="gmail-link"><a  href="#">Gmail</a></li>
+                <li><a  href="#">Images</a></li>
+                <li><button class="apps-btn"><img src="./images/outline_apps_black_24dp.png" alt=""></img></button></li> <!-- Add menu icon here-->
+                <li><a href="#" id="sign-btn">Connexion</a></li>
             </ul>
         </nav>
         <main>  <!-- Add google's icon + search bar here -->
             <div id="google-logo">
-
+                <img src="./images/googlelogo.png" alt="Image of Google's Logo">
             </div>
             <div id="search-bar">
-
+                <div id="search-icon">
+                    <img src="#" alt="">
+                </div>
+                <div id="search-form">
+                    <form>
+                        <input type="text">
+                        <input type="submit" value="Recherche Google">
+                        <a href="#"><button>J'ai de la chance</button></a>
+                    </form>
+                </div>
             </div>
             <div id="lang-options">
                 <p>
