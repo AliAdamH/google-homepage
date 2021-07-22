@@ -8,7 +8,7 @@ nav {
     flex-direction: row;
     padding-top: 20px;
     justify-content: flex-end;
-    border: 1px solid red;
+
 
 }
 
@@ -23,7 +23,7 @@ nav {
     align-items: center;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid green;
+
     height: fit-content;
 }
 
@@ -68,23 +68,17 @@ a:hover{
 .container {
     display: flex;
     width: 100%;
-    height: 75vh;
+    height: 81.2vh;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid sienna;
 }
 #search-form {
-    border: 1px solid magenta;
+
     height: 30vh;
     width: 600px;
 }
-#google-logo {
-    border: 1px solid purple;
-}
-#lang-options {
-    border: 1px solid chartreuse;
-}
+
 .form-style {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -106,7 +100,6 @@ a:hover{
 }
 
 #search-submit-btn {
-    border: 1px solid black;
     height: 15vh;
     width: 600px;
     display: grid;
@@ -145,16 +138,15 @@ a:hover{
     justify-self: start;
     padding-left: 20px;
     padding-right: 20px;
+    line-height: 40px; /* Hack-ish way to set the text at the center */
     background-color: #f8f9fa;
     border-radius: 4px;
+    height: 40px;
+    font-size: 14px;
  
 }
-.lucky-btn>button {
-    background-color: #f8f9fa;
-    height: 40px;
-    border-style: none;
-    font-size: 14px;
-    
+.lucky-btn:hover {
+    text-decoration: none;
 }
 .btn:hover{
     border: 1px solid #dadce0;
@@ -167,4 +159,57 @@ a:hover{
 }
 #lang-options p a {
     color: revert; /* Lets the text in the anchro remain blue */
+}
+.footer-style {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 40% 30% 30%;
+    width: 100%;
+    bottom: 0px;
+    border: 1px solid lightgray;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#left-links {
+    grid-column: 1/2;
+}
+
+#left-links>ul {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#left-links ul a {
+    color: gray;
+    font-size: 14px;
+}
+
+#right-links {
+    grid-column: 3/4;
+}
+
+#right-links>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: fit-content;
+}
+#right-links ul a {
+    color: gray;
+    font-size: 14px;
+}
+
+#right-links ul a button {
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 14px;
+}
+#right-links ul a button:hover {
+    text-decoration: underline;
 }
